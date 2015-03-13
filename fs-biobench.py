@@ -58,9 +58,9 @@ def runExperiment(theConfig, theArgv):
 		aExperiment._interpolation = configparser.ExtendedInterpolation()
 		aExperiment.read(theArgv[1])
 		aExperimentName = aExperiment.get('General','name')
+		aPreScript = os.system(aExperiment.get('General','script_pre'))
 		aResultOutput = open(aExperiment.get('General','results_output'),'w')
 		aResultOutput.write('EXPERIMENT_NAME,WORKFLOW_NAME,TIME\n')
-		aPreScript = os.system(aExperiment.get('General','script_pre'))
 		aWorkflows = aExperiment.items('Workflows')
 		aRepetitions = int(aExperiment.get('General','repetitions'))
 		for i in range(aRepetitions): # repeat the experiment aRepetitions times
