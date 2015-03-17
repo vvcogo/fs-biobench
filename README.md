@@ -7,6 +7,4 @@ A file system benchmark from bioinformatics workflows.
 
 ## Getting Started
 
-## Acknowledgements
-
-This component was developed within the BiobankCloud project, in the Navigators research group from the Large-Scale Informatics Systems Laboratory (LaSIGE/FC/UL).
+On [this page](https://github.com/vvcogo/fs-biobench/wiki), you will find a starting point in understanding, using, customizing and contributing to the FS-BioBench.
